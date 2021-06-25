@@ -54,7 +54,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+                I am interested in learning representation from videos (along with audio as free resources) with minimal supervision. Recently, I also develop an interest in fundamental machine learning theory.
+                <!--Representative papers are <span class="highlight">highlighted</span>.-->
               </p>
             </td>
           </tr>
@@ -103,31 +104,29 @@
               /
               <a href="">bibtex</a>
               <p></p>
-              <p>This work is an extension of our <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.pdf">CVPR 2019 paper</a>. I recommend the ablation study section. Our approach achieve decent performance after just one training epoch.  </p>
+              <p>This work is an extension of our <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.pdf">CVPR 2019 paper</a>. I recommend the ablation study section. Our approach achieved decent performance after just one training epoch.  </p>
             </td>
 
 
            <!---------Start one research item----------->
            <!------------------------------------------->
 
-          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
+           <tr onmouseout="test_stop()" onmouseover="test_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/mipnerf_ipe_yellow.png' width="160">
+                <div class="two" id='test_image'>
+                  <img src='images/map_after.png' width="160"></div>
+                <img src='images/map_before.png' width="160">
               </div>
               <script type="text/javascript">
-                function mipnerf_start() {
-                  document.getElementById('mipnerf_image').style.opacity = "1";
+                function test_start() {
+                  document.getElementById('test_image').style.opacity = "1";
                 }
     
-                function mipnerf_stop() {
-                  document.getElementById('mipnerf_image').style.opacity = "0";
+                function test_stop() {
+                  document.getElementById('test_image').style.opacity = "0";
                 }
-                mipnerf_stop()
+                test_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -254,10 +253,10 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='nerv_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/hotdog.mp4" type="video/mp4">
+                <source src="images/skeleton.png" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/hotdog.jpg' width="160">
+                <img src='images/skeleton.png' width="160">
               </div>
               <script type="text/javascript">
                 function nerv_start() {
@@ -292,16 +291,61 @@
           </tr>
 
 
+                    <!---------Start one research item----------->
+           <!------------------------------------------->
+         <tr onmouseout="slam_stop()" onmouseover="slam_start()" >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='slam_image'>
+                  <img src='images/slam_after.png' width="160"></div>
+                <img src='images/slam_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function slam_start() {
+                  document.getElementById('slam_image').style.opacity = "1";
+                }
+    
+                function slam_stop() {
+                  document.getElementById('slam_image').style.opacity = "0";
+                }
+                slam_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://yenchenlin.me/inerf/">
+                <papertitle>Robot Intelligence for Real World Applications
+                </papertitle>
+              </a>
+              <br>
+              <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>,
+              <a href="https://fzheng.me/">Fan Zheng</a>,
+              <a href="">Ruibin Guo</a>, 
+              <strong>Jiangliu Wang</strong>,
+              <a href="https://scholar.google.com/citations?user=q-Qqa20AAAAJ&hl=en">Qiang Nie</a>,
+              <a href="">Xin Wang</a>,
+              <a href="https://www.wangzerui.com/">Zerui Wang</a>,
+              <br>
+              <em>Chinese Journal of Electronics</em>, 2018 
+              <br>
+              <a href="http://yenchenlin.me/inerf/">pdf</a> /
+              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">bibtex</a>
+              <p></p>
+              <p>This is an editor invitation paper. A brief review is presented to introduce our recent works on machine intelligence for real-world applications of robots. One technology <br> leads to a startup company <a href="https://www.visionnav.com/">VisionNav</a>.
+              </p>
+            </td>
+          </tr> 
+
+
            <!---------Start one research item----------->
            <!------------------------------------------->
           <tr onmouseout="winr_stop()" onmouseover="winr_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='winr_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/notre_160.mp4" type="video/mp4">
+                <source src="images/linear_velocity.png" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/notre.jpg' width="160">
+                <img src='images/linear_velocity.png' width="160">
               </div>
               <script type="text/javascript">
                 function winr_start() {
@@ -335,24 +379,22 @@
 
           <!---------Start one research item----------->
            <!------------------------------------------->
-          <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
+         <tr onmouseout="child_stop()" onmouseover="child_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfw_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfw_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfw_before.jpg' width="160">
+                <div class="two" id='child_image'>
+                  <img src='images/child.png' width="160"></div>
+                <img src='images/child.png' width="160">
               </div>
               <script type="text/javascript">
-                function nerfw_start() {
-                  document.getElementById('nerfw_image').style.opacity = "1";
+                function child_start() {
+                  document.getElementById('child_image').style.opacity = "1";
                 }
     
-                function nerfw_stop() {
-                  document.getElementById('nerfw_image').style.opacity = "0";
+                function child_stop() {
+                  document.getElementById('child_image').style.opacity = "0";
                 }
-                nerfw_stop()
+                slam_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -374,50 +416,7 @@
             </td>
           </tr> 
           
-          <!---------Start one research item----------->
-           <!------------------------------------------->
-          <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='inerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/inerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/inerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function inerf_start() {
-                  document.getElementById('inerf_image').style.opacity = "1";
-                }
-                function inerf_stop() {
-                  document.getElementById('inerf_image').style.opacity = "0";
-                }
-                inerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://yenchenlin.me/inerf/">
-                <papertitle>Robot Intelligence for Real World Applications
-                </papertitle>
-              </a>
-              <br>
-              <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>,
-              <a href="https://fzheng.me/">Fan Zheng</a>,
-              <a href="">Ruibin Guo</a>, 
-              <strong>Jiangliu Wang</strong>,
-              <a href="https://scholar.google.com/citations?user=q-Qqa20AAAAJ&hl=en">Qiang Nie</a>,
-              <a href="">Xin Wang</a>,
-              <a href="https://www.wangzerui.com/">Zerui Wang</a>,
-              <br>
-              <em>Chinese Journal of Electronics</em>, 2018 
-              <br>
-              <a href="http://yenchenlin.me/inerf/">pdf</a> /
-              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">bibtex</a>
-              <p></p>
-              <p>This is an invitation paper. A brief review is presented to introduce our previous works on machine intelligence for real-world applications of robots.
-              </p>
-            </td>
-          </tr> 
+          <!----------------------Before PhD-------------------->
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -434,24 +433,22 @@
           <!---------Start one research item----------->
            <!------------------------------------------->
 
-          <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
+          <tr onmouseout="phase_stop()" onmouseover="phase_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerd_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerd_160.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerd_160.jpg' width="160">
+                <div class="two" id='phase_image'>
+                  <img src='images/phase2.jpg' width="160"></div>
+                <img src='images/phase1.jpg' width="160">
               </div>
               <script type="text/javascript">
-                function nerd_start() {
-                  document.getElementById('nerd_image').style.opacity = "1";
+                function phase_start() {
+                  document.getElementById('phase_image').style.opacity = "1";
                 }
     
-                function nerd_stop() {
-                  document.getElementById('nerd_image').style.opacity = "0";
+                function phase_stop() {
+                  document.getElementById('phase_image').style.opacity = "0";
                 }
-                nerd_stop()
+                slam_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -468,7 +465,7 @@
               <a href="https://www.youtube.com/watch?v=JL-qMTXw9VU">bibtex</a>
               <p></p>
               <p>
-              An optimal interception strategy of the defender is provided with interpretations of its physical meaning.
+              An optimal interception strategy of the defender is provided with interpretations of its physical meaning, which depends on relative mobility of the intruder and defender.
               </p>
             </td>
           </tr>
