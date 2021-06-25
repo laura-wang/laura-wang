@@ -64,22 +64,24 @@
 
           <!---------Start one research item----------->
           <!------------------------------------------->
-          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()" >
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfactor_image'>
-                  <img src='images/nerfactor_after.png' width="160"></div>
-                <img src='images/nerfactor_before.png' width="160">
+                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/merge.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sts_before.png' width="160">
               </div>
               <script type="text/javascript">
-                function nerfactor_start() {
-                  document.getElementById('nerfactor_image').style.opacity = "1";
+                function ibrnet_start() {
+                  document.getElementById('ibrnet_image').style.opacity = "1";
                 }
     
-                function nerfactor_stop() {
-                  document.getElementById('nerfactor_image').style.opacity = "0";
+                function ibrnet_stop() {
+                  document.getElementById('ibrnet_image').style.opacity = "0";
                 }
-                nerfactor_stop()
+                ibrnet_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -96,13 +98,13 @@
               <br>
               <em>T-PAMI</em>, 2021 
               <br>
-              <a href="https://ieeexplore.ieee.org/document/9352025">early access</a>
-              /
               <a href="https://arxiv.org/pdf/2008.13426.pdf">pdf</a>
+              / 
+              <a href="https://ieeexplore.ieee.org/document/9352025">early access</a>
               /
               <a href="https://github.com/laura-wang/video_repres_sts">code</a>
               /
-              <a href="">bibtex</a>
+              <a href="data/WangTPAMI2021.bib">bibtex</a>
               <p></p>
               <p>This work is an extension of our <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.pdf">CVPR 2019 paper</a>. I recommend the ablation study section. Our approach achieved decent performance after just one training epoch.  </p>
             </td>
@@ -131,7 +133,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Li_Learning_To_Identify_Correct_2D-2D_Line_Correspondences_on_Sphere_CVPR_2021_paper.html">
-                <papertitle>Learning To Identify Correct 2D-2D Line Correspondences on Sphere</papertitle>
+                <papertitle>Learning to Identify Correct 2D-2D Line Correspondences on Sphere</papertitle>
               </a>
               <br>
               <a href="https://sites.google.com/view/haoangli/homepage">Haoang Li</a>,
@@ -159,11 +161,14 @@
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                <div class="two" id='nerfbake_image'>
+
+                <video  width=100% height=100% muted autoplay loop>
+                <source src="images/pace_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
+                </video>
+              </div>
+                <img src='images/pace_before.png' width="160">
               </div>
               <script type="text/javascript">
                 function nerfbake_start() {
@@ -177,7 +182,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2008.05861.pdf">
+              <a href="https://arxiv.org/abs/2008.05861">
               <papertitle>Self-Supervised Video Representation Learning by Pace Prediction</papertitle>
               </a>
               <br>
@@ -191,39 +196,37 @@
               /
               <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">short video</a>
               /
-              <a href="">long video</a>
+              <a href="https://www.youtube.com/watch?v=LCeJYkSFXSk">long video</a>
               /
-              <a href="">code</a>
+              <a href="https://github.com/laura-wang/video-pace">code</a>
               / 
-              <a href="https://nerf.live/#demos">bibtex</a>
+              <a href="data/WangECCV2020.bib">bibtex</a>
               <p></p>
               <p>This work is inspired by the observation that human visual system is sensitive to video pace, e.g., slow motion, a widely used technique in film making.</p>
             </td>
           
           <!---------Start one research item----------->
            <!------------------------------------------->
-          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+          <tr onmouseout="mas_stop()" onmouseover="mas_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/ibrnet_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/ibrnet_before.jpg' width="160">
+                <div class="two" id='mas_image'>
+                  <img src='images/mas_attention.png' width="160"></div>
+                <img src='images/mas_attention.png' width="160">
               </div>
               <script type="text/javascript">
-                function ibrnet_start() {
-                  document.getElementById('ibrnet_image').style.opacity = "1";
+                function mas_start() {
+                  document.getElementById('mas_image').style.opacity = "1";
                 }
     
-                function ibrnet_stop() {
-                  document.getElementById('ibrnet_image').style.opacity = "0";
+                function mas_stop() {
+                  document.getElementById('mas_image').style.opacity = "0";
                 }
-                ibrnet_stop()
+                mas_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ibrnet.github.io/">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.html">
                 <papertitle>Self-supervised spatio-temporal representation learning for videos by predicting motion and appearance statistics</papertitle>
               </a>
               <br>
@@ -240,7 +243,7 @@
               /
               <a href="https://github.com/laura-wang/video_repres_mas">code</a> 
               / 
-              <a href="">bibtex</a>
+              <a href="data/WangCVPR2019.bib">bibtex</a>
               <p></p>
               <p>Neural networks are asked to predict motion and appearance statistics, including the largest motion area, largest and smallest color diversity areas. </p>
             </td>
@@ -270,7 +273,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://pratulsrinivasan.github.io/nerv/">
+              <a href="https://ieeexplore.ieee.org/document/8672922">
                 <papertitle>View-invariant human action recognition based on a 3d bio-constrained skeleton model</papertitle>
               </a>
               <br>
@@ -281,8 +284,8 @@
               <br>
               <em>TIP</em>, 2019
               <br>
-              <a href="">pdf</a> /
-              <a href="">bibtex</a>
+              <a href="data/NieTIP2019.pdf">pdf</a> /
+              <a href="data/NieTIP2019.bib">bibtex</a>
               <p></p>
               <p>
               A 3D bio-constrained skeleton model is proposed to recover the corrupted skeletons and encode the body-level motion features into images. 
@@ -291,7 +294,47 @@
           </tr>
 
 
-                    <!---------Start one research item----------->
+           <!---------Start one research item----------->
+           <!------------------------------------------->
+          <tr onmouseout="skeleton_stop()" onmouseover="skeleton_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='skeleton_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/skeleton_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/skeleton_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function skeleton_start() {
+                  document.getElementById('skeleton_image').style.opacity = "1";
+                }
+                function skeleton_stop() {
+                  document.getElementById('skeleton_image').style.opacity = "0";
+                }
+                skeleton_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/8630333">
+                <papertitle>Kinematics features for 3D action recognition using two-stream CNN</papertitle>
+              </a>
+              <br>
+              
+              <strong> Jiangliu Wang </strong>, 
+              <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>
+              <br>
+              <!--<em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
+              <em>WCICA</em>, 2018
+              <br>
+              <a href="data/WangWCICA2018.pdf">pdf</a> /
+              <a href="data/WangWCICA2018.bib">bibtex</a> 
+              <p></p>
+              <p>Temporal encoded kinematics features are proposed for action recognition, which compute the linear velocity and orientation displacement based on human skeleton data.</p>
+            </td>
+          </tr>
+
+          <!---------Start one research item----------->
            <!------------------------------------------->
          <tr onmouseout="slam_stop()" onmouseover="slam_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -312,14 +355,14 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://yenchenlin.me/inerf/">
+              <a href="https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/cje.2018.03.007">
                 <papertitle>Robot Intelligence for Real World Applications
                 </papertitle>
               </a>
               <br>
               <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>,
               <a href="https://fzheng.me/">Fan Zheng</a>,
-              <a href="">Ruibin Guo</a>, 
+              <a href="">Ruibin Guo</a>,
               <strong>Jiangliu Wang</strong>,
               <a href="https://scholar.google.com/citations?user=q-Qqa20AAAAJ&hl=en">Qiang Nie</a>,
               <a href="">Xin Wang</a>,
@@ -327,8 +370,8 @@
               <br>
               <em>Chinese Journal of Electronics</em>, 2018 
               <br>
-              <a href="http://yenchenlin.me/inerf/">pdf</a> /
-              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">bibtex</a>
+              <a href="data/LiuCJE2018.pdf">pdf</a> /
+              <a href="data/LiuCJE2018.bib">bibtex</a>
               <p></p>
               <p>This is an editor invitation paper. A brief review is presented to introduce our recent works on machine intelligence for real-world applications of robots. One technology <br> leads to a startup company <a href="https://www.visionnav.com/">VisionNav</a>.
               </p>
@@ -336,45 +379,7 @@
           </tr> 
 
 
-           <!---------Start one research item----------->
-           <!------------------------------------------->
-          <tr onmouseout="winr_stop()" onmouseover="winr_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='winr_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/linear_velocity.png" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/linear_velocity.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function winr_start() {
-                  document.getElementById('winr_image').style.opacity = "1";
-                }
-                function winr_stop() {
-                  document.getElementById('winr_image').style.opacity = "0";
-                }
-                winr_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://www.matthewtancik.com/learnit">
-                <papertitle>Kinematics features for 3D action recognition using two-stream CNN</papertitle>
-              </a>
-              <br>
-              
-              <strong> Jiangliu Wang </strong>, 
-              <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>
-              <br>
-              <!--<em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-              <em>WCICA</em>, 2018
-              <br>
-              <a href="http://www.matthewtancik.com/learnit">pdf</a> /
-              <a href="https://arxiv.org/abs/2012.02189">bibtex</a> 
-              <p></p>
-              <p>Temporal encoded kinematics features are proposed for action recognition, which compute the linear velocity and orientation displacement based on human skeleton data.</p>
-            </td>
-          </tr>
+           
           
 
           <!---------Start one research item----------->
@@ -398,7 +403,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://nerf-w.github.io/">
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8665218">
                 <papertitle>A child caring robot for the dangerous behavior detection based on the object recognition and human action recognitions</papertitle>
               </a>
               <br>
@@ -409,8 +414,8 @@
               <br>
               <em>ROBIO</em>, 2018
               <br>
-              <a href="https://arxiv.org/abs/2008.02268">pdf</a> /
-              <a href="https://www.youtube.com/watch?v=mRAKVQj5LRA">bibtex</a>
+              <a href="data/NieROBIO2018.pdf">pdf</a> /
+              <a href="data/NieROBIO2018.bib">bibtex</a>
               <p></p>
               <p> A caring robot is developed to detect dangerous behavior of children in the domestic environment based on action recognition and object recognition technologies.</p>
             </td>
@@ -452,7 +457,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://markboss.me/publication/2021-nerd/">
+              <a href="https://www.sciencedirect.com/science/article/pii/S1007570415000970">
                 <papertitle>Motion patterns and phase-transition of a defender–intruder problem and optimal interception strategy of the defender</papertitle>
               </a>
               <br>
@@ -461,8 +466,8 @@
               <br>
               <em>Communications in Nonlinear Science and Numerical Simulation</em>, 2015
               <br>
-              <a href="https://markboss.me/publication/2021-nerd/">pdf</a> /
-              <a href="https://www.youtube.com/watch?v=JL-qMTXw9VU">bibtex</a>
+              <a href="data/WangCOM2015.pdf">pdf</a> /
+              <a href="data/WangCOM2015.bib">bibtex</a>
               <p></p>
               <p>
               An optimal interception strategy of the defender is provided with interpretations of its physical meaning, which depends on relative mobility of the intruder and defender.
