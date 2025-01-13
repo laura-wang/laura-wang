@@ -112,7 +112,44 @@
           </tr>
 
 
-
+          
+                  <!---------Start one research item----------->
+           <!------------------------------------------->
+           <tr onmouseout="mas_stop()" onmouseover="mas_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mas_image'>
+                  <img src='images/SR_Mamba.png' width="160"></div>
+                <img src='images/SR_Mamba.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mas_start() {
+                  document.getElementById('mas_image').style.opacity = "1";
+                }
+    
+                function mas_stop() {
+                  document.getElementById('mas_image').style.opacity = "0";
+                }
+                mas_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2407.08333">
+                <papertitle>SR-Mamba: Effective Surgical Phase Recognition with State Space Models</papertitle>
+              </a>
+              <br>
+              <a>Rui Cao</a>,
+              <strong> Jiangliu Wang </strong>,
+              <a href="http://ri.cuhk.edu.hk/yhliu">Yun-hui Liu</a>
+              <br>
+              <em>arXiv:2407.08333</em>, 2024
+              <br>
+              <a href="https://arxiv.org/pdf/2407.08333">pdf</a>
+              /
+              <a href="https://github.com/rcao-hk/SR-Mamba">code</a> 
+              <p></p>
+            </td>
+          </tr>
 
 
 
